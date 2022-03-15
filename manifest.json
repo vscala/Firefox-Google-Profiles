@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Google Profiles",
+  "version": "1.0",
+
+  "description": "Automatically switch to specified google profile",
+
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.google.com/*"],
+      "js": ["profilemanager.js"]
+    }
+  ]
+
+}
